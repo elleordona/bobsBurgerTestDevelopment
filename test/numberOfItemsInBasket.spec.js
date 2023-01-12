@@ -1,8 +1,8 @@
 //file where we execute the different tests
 const { assertEquals } = require(`../test-framework.js`);
-const { basket } = require(`../src/addItem.js`);
+const { basket } = require(`../src/basket.js`);
 
-//initialise variables
+//initialize variables
 let input = []; 
 let expected, actual, result; //undefined
 const myBasket = new basket(); //create an empty basket
