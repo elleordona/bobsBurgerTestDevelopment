@@ -10,4 +10,4 @@ class basket {
     }
 }
 
-module.exports = { basket }
+module.exports = { basket };
