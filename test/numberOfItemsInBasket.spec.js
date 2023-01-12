@@ -11,12 +11,12 @@ const myBasket = new basket(); //create an empty basket
 console.log('Adding an item => array size +1'); //stating what the test to be carried out is
 
 //Arrange
-expected = 1;
+expected = 1; //expected value from test
 input = "item"; //input the name of the item
 
 //Act
 actual = myBasket.addItem(input); //testing the addItem function 
-console.log(actual);
+console.log(actual); // print the value that is calculated
 
 //Assert
 result = assertEquals(actual, expected); //compares expected and actual output
