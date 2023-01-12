@@ -1,13 +1,20 @@
 //code to add item to basket
+const { product } = require(`./product.js`)
+
 class basket {
 
     basketItems = []; //array for items in the basket
 
     //functions for basket
     addItem(item) {
-        this.basketItems.push(item); //add the item string into the basket array
-        return this.basketItems.length; // returns the length of the basket array
+        if (item instanceof product) {
+            this.basketItems.push(item); //add the item string into the basket array
+        }
+    }
+
+    removeItem(item) {
+        
     }
 }
 
-module.exports = { basket };
+module.exports = {  basket  };
