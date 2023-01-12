@@ -12,7 +12,7 @@ console.log('Adding an item => array size +1'); //stating what the test to be ca
 
 //Arrange
 expected = 1; //expected value from test
-input = "item"; //input the name of the item
+input = "bagel"; //input the name of the item
 
 //Act
 actual = myBasket.addItem(input); //testing the addItem function 
@@ -21,6 +21,7 @@ console.log(actual); // print the value that is calculated
 //Assert
 result = assertEquals(actual, expected); //compares expected and actual output
 console.log(`Adding an item => array size +1: ${result ? `Passed` : `Failed`}`); //shows the user if the test passed of failed
+console.log(myBasket.basketItems); //logging the contents of the basket
 
 //Clean Up 
 input = []; //resetting all the variables for a new test
