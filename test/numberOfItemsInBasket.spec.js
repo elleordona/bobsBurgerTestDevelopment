@@ -12,7 +12,7 @@ console.log('addItem adds item into basket and increases the length by 1'); //st
 
 //Arrange
 expected = 1; //expected value from test
-input = new product(); //input the name of the item
+input = new product('bagel 1'); //input the name of the item
 
 //Act
 let myBasket = new basket(); //create an empty basket
@@ -36,7 +36,7 @@ console.log('using addItem to a basket with something already inside will increa
 
 //Arrange
 expected = 2; //the expected value of the test
-input = new product(); // new item being added to the basket
+input = new product('bagel 2'); // new item being added to the basket
 
 //Act
 // using the basket from previous test to confirm this test so there is no need to restate myBasket
